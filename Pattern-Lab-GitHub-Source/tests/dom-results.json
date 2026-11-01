@@ -1,0 +1,113 @@
+{
+  "environment": "Node v24.22.1; jsdom 26.1.0; simulated Worker for fit; no real browser",
+  "results": [
+    {
+      "name": "Initial sample and navigation",
+      "expected": "72 songs load; all five stages navigable",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Project purpose and feature controls",
+      "expected": "Notes survive stage changes; preparation reports 72 examples",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Fit through UI using worker test double",
+      "expected": "Fit completes and Explore shows 3 clusters",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Rename, interpretation, and snapshot",
+      "expected": "Saved run retains original name after active name changes",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "PCA and feature view invariance",
+      "expected": "Switching views leaves assignments unchanged",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "New-example form",
+      "expected": "Assignment is recorded with finite distance",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Stale model detection and comparison",
+      "expected": "Changing K marks model outdated; refit and save creates second run",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Step controls",
+      "expected": "Initial centers, assignment, update, reset, run and pause wired",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Report, CSV, model and project downloads",
+      "expected": "Four downloads are generated; report includes saved evidence",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Project validation and round trip",
+      "expected": "JSON round trip preserves writing and 2 runs; corrupt files rejected",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "HTML content safety",
+      "expected": "Student markup appears as text and report escapes it",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Autosave unavailable",
+      "expected": "Unavailable storage does not crash or prevent project download",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Open saved project through file control",
+      "expected": "Project restored and writing retained",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Reload fitted model and predict",
+      "expected": "Saved model loads and accepts new example",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Upload two-column numerical CSV",
+      "expected": "Both columns can be features; display uses row number",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Training chart contains edge centers throughout learning",
+      "expected": "All point circles and center squares, including stroke, remain inside the grid",
+      "observed": "5 rendered learning states checked; all markers inside grid",
+      "status": "PASS"
+    },
+    {
+      "name": "Malformed CSV UI error",
+      "expected": "Invalid CSV produces actionable message",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Every built-in dataset loads through controls",
+      "expected": "All nine datasets replace the preview and prepare at least two usable features",
+      "observed": "air: 3; penguins: 500; cars: 344; songs: 398; objects: 72; separated: 60; overlapping: 90; continuous: 90; curved: 90",
+      "status": "PASS"
+    }
+  ]
+}

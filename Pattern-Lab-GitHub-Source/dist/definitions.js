@@ -1,0 +1,18 @@
+export const definitions={
+ 'Feature':'A measurable characteristic of an example, such as tempo or energy. Selected features define the similarities the model uses.',
+ 'K':'The number of clusters you ask K-means to form. You choose K; the model learns the centers and assignments.',
+ 'Centroid':'The center of a cluster: the arithmetic mean of its assigned examples in the fitted feature space. Standardized features are averaged after scaling.',
+ 'Inertia':'The sum of squared distances from each example to its assigned center. Lower values mean tighter groups in the fitted feature space. More clusters usually lower inertia. Compare only runs using the same data, features, and preprocessing. It is not accuracy.',
+ 'Silhouette':'A score from −1 to 1 comparing an example’s distance to its own group with its distance to the closest other group. Higher values suggest better separation; negative values can suggest a poor assignment. The displayed score is the average. It does not prove the groups are useful or correct.',
+ 'PCA':'Principal Component Analysis combines features into new axes that preserve as much variation as possible. PC1 preserves the most, followed by PC2 and PC3. Here PCA only changes the visualization, not the clusters.',
+ 'Explained variance':'The percentage of variation in the fitted data represented by a principal component. Higher coverage preserves more variation, but does not prove the groups are meaningful.',
+ 't-SNE':'A visualization method that emphasizes local similarities. Nearby points may be similar, but island sizes and distances between groups can be misleading. Axes have no original feature units. A 3D embedding is computed separately from a 2D embedding.',
+ 'Perplexity':'A t-SNE setting controlling the effective neighborhood size considered around each point. Smaller values emphasize more local structure; larger values consider broader neighborhoods. It is not the number of clusters and must be smaller than the number of examples.',
+ 'Iterations':'The number of optimization updates used to compute a t-SNE layout. More updates can help the layout settle, but do not guarantee a better or more truthful grouping.',
+ 'Learning rate':'How large a step t-SNE takes when adjusting the layout. Too large or too small a value can produce poor results. This setting affects the visualization, not K-means training.',
+ 'Random seed':'A number that makes random initialization repeatable. The same data, settings, seed, and implementation should reproduce a run within numerical limits. A seed is not a quality score.',
+ 'Standardization':'Subtract the feature mean, then divide by its population standard deviation. This gives features comparable scales so a large numerical unit does not automatically dominate distance. Outliers can still matter.',
+ 'Initializations':'The number of different starting-center runs to try. Ordinary training keeps the lowest-inertia converged run among them. This helps reduce sensitivity to starting positions.',
+ 'Model card':'A short record of a model’s purpose, data, features, settings, intended use, and limitations. It helps someone else understand and use the model responsibly. Writing is optional here: your separate class document can hold the reflections, while exports preserve model settings and results.',
+ '3D view':'Displays three coordinates and lets you rotate the camera. Rotation does not retrain the model. Overlap may change with viewpoint, and hidden dimensions can still matter. Uniform display scaling preserves the geometry of the coordinates shown.',
+};

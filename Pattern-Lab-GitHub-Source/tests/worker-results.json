@@ -1,0 +1,32 @@
+{
+  "environment": "Node v24.22.1 worker_threads with Web Worker message bridge; actual dist/worker.js",
+  "results": [
+    {
+      "name": "Actual fit worker",
+      "expected": "Fixture returns inertia 4",
+      "observed": 4,
+      "status": "PASS"
+    },
+    {
+      "name": "Actual t-SNE module worker",
+      "expected": "Finite deterministic points and progress updates",
+      "observed": {
+        "points": 72,
+        "progressMessages": 10
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "Worker rejects invalid t-SNE",
+      "expected": "Perplexity error returned",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Worker cancellation",
+      "expected": "Termination resolves and no result follows",
+      "observed": "Terminated before result",
+      "status": "PASS"
+    }
+  ]
+}

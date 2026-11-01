@@ -1,0 +1,5 @@
+tSNEJS by Andrej Karpathy
+https://github.com/karpathy/tsnejs
+Upstream Readme declares MIT license.
+Bundled tsne.js unchanged; SHA256 70a7d6cd823fdc707c91b7cfa0036cd59a2199de6d5b7af9bb1f1081325a77f1
+Upstream reference: L.J.P. van der Maaten and G.E. Hinton, Visualizing High-Dimensional Data Using t-SNE, JMLR 9(Nov):2579–2605, 2008.

@@ -1,0 +1,132 @@
+{
+  "environment": "Node v24.22.1; scikit-learn 1.8.0",
+  "results": [
+    {
+      "name": "Fixed-center K-means fixture",
+      "expected": "Centers [[0,1],[10,11]]; inertia 4; matches sklearn",
+      "observed": "{\"centers\":[[0,1],[10,11]],\"inertia\":4}",
+      "status": "PASS"
+    },
+    {
+      "name": "Silhouette reference",
+      "expected": "Same result as sklearn within 1e-9",
+      "observed": 0.8585856960087929,
+      "status": "PASS"
+    },
+    {
+      "name": "Silhouette edge cases",
+      "expected": "Singleton zero; identical points zero; invalid cluster counts undefined",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Population standardization",
+      "expected": "Matches StandardScaler to 1e-9",
+      "observed": [
+        5,
+        5.0990195135927845
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "Missing-value preprocessing",
+      "expected": "Drop removes 1 row; mean fills 1 cell with 2",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Constants excluded",
+      "expected": "Constant feature excluded; fewer than 2 remaining blocked",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Seed reproducibility and center invariants",
+      "expected": "Same output twice; every center equals group mean; nearest assignments agree",
+      "observed": {
+        "iterations": 2,
+        "inertia": 37.6845444209133
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid K, duplicates, ties",
+      "expected": "K outside distinct rows blocked; deterministic tie goes to first center",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Empty cluster repair",
+      "expected": "Duplicate starting centers repaired; all 3 groups occupied at convergence",
+      "observed": {
+        "repairs": 2,
+        "centers": [
+          [
+            1.6666666666666667,
+            2
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            9,
+            9
+          ]
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration limit status",
+      "expected": "Unfinished fit reports converged=false",
+      "observed": false,
+      "status": "PASS"
+    },
+    {
+      "name": "PCA reference",
+      "expected": "Explained variance and projected pair distances match sklearn to 1e-8",
+      "observed": [
+        0.9702724658959914,
+        0.022873663583604036
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "New example / model round trip",
+      "expected": "Same nearest cluster and preprocessing after serialization",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "CSV quoted and multiline fields",
+      "expected": "Quoted comma, escaped quotes, blank cell, CRLF supported",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "CSV errors",
+      "expected": "Duplicate headers, malformed rows, quotes, Infinity, and excess rows rejected",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "All six built-in datasets",
+      "expected": "Each fits to finite converged model with 2+ features",
+      "observed": "6 of 6",
+      "status": "PASS"
+    },
+    {
+      "name": "t-SNE validation",
+      "expected": "Invalid perplexity, iterations, rate rejected",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Pinned t-SNE finite and deterministic",
+      "expected": "Two independent seeded runs yield identical finite coordinates; clusters unchanged",
+      "observed": "72 finite 2D points; exact repeated coordinates",
+      "status": "PASS"
+    }
+  ]
+}

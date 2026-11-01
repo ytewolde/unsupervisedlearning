@@ -1,0 +1,53 @@
+{
+  "environment": "Node v24.22.1; jsdom 26.1.0; fit worker test double",
+  "results": [
+    {
+      "name": "Distribution and correlation fixtures",
+      "expected": "Missing cells excluded; correct bins and Pearson coefficient",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Data quick picks use actual records",
+      "expected": "Penguins loads 344 rows, not mockup counts",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Feature distributions and preview axes",
+      "expected": "72 points; axes update actual coordinates without changing features or preprocessing",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Training layout retains working step and fit controls",
+      "expected": "Playback moves through phases; fit yields calculated diagnostics",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Cluster filtering and member inspection",
+      "expected": "24 rows for cluster 1; record opens measurements; 3D rotation retains filtering and assignments",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "2D point keyboard selection",
+      "expected": "Enter selects corresponding example; t-SNE and PCA controls retained",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Model card sections and exports",
+      "expected": "Overview, preprocessing, profiles, diagnostics and student writing contain actual values",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "CSV drop validation and replacement",
+      "expected": "Reject oversize and malformed files without changing current dataset; valid drop updates preview",
+      "observed": "As expected",
+      "status": "PASS"
+    }
+  ]
+}

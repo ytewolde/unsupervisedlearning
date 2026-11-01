@@ -1,0 +1,53 @@
+{
+  "environment": "Node v24.22.1; jsdom 26.1.0; not a browser; contrast calculated from CSS token values",
+  "results": [
+    {
+      "name": "penguins: bundled data and K-means",
+      "expected": "Correct row/missing counts; finite fit; source retained; no category labels",
+      "observed": "344 rows; 342 complete rows; 8 missing cells; inertia 379.39250275551774",
+      "status": "PASS"
+    },
+    {
+      "name": "cars: bundled data and K-means",
+      "expected": "Correct row/missing counts; finite fit; source retained; no category labels",
+      "observed": "398 rows; 392 complete rows; 6 missing cells; inertia 561.6707730761906",
+      "status": "PASS"
+    },
+    {
+      "name": "Theme switch and persistence",
+      "expected": "Light/dark changes root and saves preference; project unchanged",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Saved theme and system default",
+      "expected": "Saved dark restored; system uses dark preference; invalid saved theme ignored",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Storage unavailable theme",
+      "expected": "Theme still switches and explains temporary setting",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Centered header semantics",
+      "expected": "Pattern Lab title and accessible appearance label present; emblem absent",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Theme text contrast",
+      "expected": "Main, supporting and accent text pass WCAG AA 4.5:1 on surfaces",
+      "observed": "Minimum tested contrast 6.76:1",
+      "status": "PASS"
+    },
+    {
+      "name": "Real sample selection through UI",
+      "expected": "Both real datasets load and expose units/limitations; legacy project schema retained",
+      "observed": "As expected",
+      "status": "PASS"
+    }
+  ]
+}

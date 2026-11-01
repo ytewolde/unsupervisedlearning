@@ -1,0 +1,12 @@
+{
+  "name": "cluster-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node tests/core.test.mjs && node tests/dom.test.mjs && node tests/worker.test.mjs && node tests/three-d.test.mjs && node tests/data-theme.test.mjs && node tests/air.test.mjs && node tests/screens.test.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "26.1.0"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "environment": "Node v24.22.1; exact downloaded NEA API response fixture",
+  "results": [
+    {
+      "name": "NEA source fidelity",
+      "expected": "500 rows match every selected source value, missing cells unchanged",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "NEA fit and preprocessing",
+      "expected": "Both missing-value choices produce finite converged fits; metadata excluded",
+      "observed": "As expected",
+      "status": "PASS"
+    }
+  ]
+}

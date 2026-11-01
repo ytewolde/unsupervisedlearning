@@ -1,0 +1,81 @@
+{
+  "environment": "Node v24.22.1, jsdom 26.1.0, actual worker code via worker_threads bridge; sklearn 1.8.0 reference; not a browser",
+  "results": [
+    {
+      "name": "3-component PCA reference",
+      "expected": "Variance and pairwise distances match sklearn to 1e-8",
+      "observed": [
+        0.5523186804570009,
+        0.40675908586183634,
+        0.03194792319089991
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "Rotation geometry",
+      "expected": "Rigid rotation preserves 3D distance; camera does not mutate data",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Dimension validation",
+      "expected": "Invalid PCA and t-SNE dimensions rejected",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "3D feature controls and invariance",
+      "expected": "Rotation sliders, arrow key, reset, and Z selector change view only",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "3D pointer drag",
+      "expected": "Dragging changes camera and releases without changing assignments",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "3D PCA view",
+      "expected": "Shows PC3 and preserves cluster assignments",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "3D t-SNE actual worker through UI",
+      "expected": "72 finite triples; deterministic repeated fit; 2D/3D results coexist",
+      "observed": "72 finite triples; identical repeated run; 2D embedding also retained",
+      "status": "PASS"
+    },
+    {
+      "name": "Definition dialogs",
+      "expected": "Inertia popup text, close/focus restoration, keyboard escape, t-SNE terms",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "3D project reload, snapshots, report",
+      "expected": "Embeddings and camera survive; 3D report explicitly identifies fixed projection",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Point inspection and true neighbors",
+      "expected": "Selection shows raw units; five closest fitted-space rows; search and camera do not change model",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "3D point click and drag separation",
+      "expected": "Click selects source row; drag rotates without changing selection",
+      "observed": "As expected",
+      "status": "PASS"
+    },
+    {
+      "name": "Model card explanation",
+      "expected": "Explains optional documentation, not grading or training",
+      "observed": "As expected",
+      "status": "PASS"
+    }
+  ]
+}
